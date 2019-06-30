@@ -1,0 +1,29 @@
+.landing-header {
+  padding-top: 30vh;
+  padding-bottom: 25vh;
+}
+
+.landing-title {
+  font-size: 10vw;
+}
+
+.landing-description {
+  font-size: 2vw;
+}
+
+.landing-navigator {
+  padding-top: 18vh;
+}
+
+.landing-description-more {
+  margin-bottom: 60vh;
+}
+
+.description-more-title {
+  font-size: 5vw
+}
+
+.description-more-paragraph {
+  margin-top: 10vh;
+  font-size: 2vw;
+}
