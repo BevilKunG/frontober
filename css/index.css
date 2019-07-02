@@ -16,7 +16,7 @@
 }
 
 .landing-description-more {
-  margin-bottom: 60vh;
+  margin-bottom: 20vh;
 }
 
 .description-more-title {
@@ -26,4 +26,8 @@
 .description-more-paragraph {
   margin-top: 10vh;
   font-size: 2vw;
+}
+
+.paragraph-mt {
+  margin-top: 5vh;
 }

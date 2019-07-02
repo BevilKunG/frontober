@@ -3,9 +3,14 @@ const app = express()
 const path = require('path')
 
 app.use('/css', express.static(__dirname + '/css'))
+app.use('/assets', express.static(__dirname + '/assets'))
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/index.html'))
+})
+
+app.get('/rules', (req, res) => {
+  res.sendFile(path.join(__dirname + '/html/rules.html'))
 })
 
 app.listen(process.env.port || 3000, () => {
