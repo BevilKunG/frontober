@@ -1,0 +1,15 @@
+.side-bar {
+  background-color: #F8F8F8;
+  padding-bottom: 100vh;
+}
+
+.tab-default {
+  width: 1vh;
+  height: 3vw;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.tab-active {
+  background-color: blue;
+}

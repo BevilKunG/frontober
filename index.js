@@ -14,6 +14,10 @@ app.get('/rules', (req, res) => {
   res.sendFile(path.join(__dirname + '/html/rules.html'))
 })
 
+app.get('/tutorials', (req, res) => {
+  res.sendFile(path.join(__dirname + '/html/tutorials.html'))
+})
+
 // Let's Code
 
 app.get('/example', (req, res) => {
