@@ -3,6 +3,7 @@ const app = express()
 const path = require('path')
 
 app.use('/css', express.static(__dirname + '/css'))
+app.use('/js', express.static(__dirname + '/js'))
 app.use('/assets', express.static(__dirname + '/assets'))
 app.use('/contribute', express.static(__dirname + '/contribute'))
 
@@ -32,6 +33,13 @@ app.get('/tutorials/nodejs', (req, res) => {
 
 app.get('/tutorials/git', (req, res) => {
   res.sendFile(path.join(__dirname + '/html/tutorialGit.html'))
+})
+
+// API
+const contributors = require('./js/contributors')
+
+app.get('/contributors', (req, res) => {
+  res.json({ contributors })
 })
 
 // Let's Code
