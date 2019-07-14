@@ -31,3 +31,19 @@
 .paragraph-mt {
   margin-top: 5vh;
 }
+
+.landing-thanking {
+  margin-bottom: 45vh;
+}
+
+.thanking-title {
+  font-size: 5vw;
+}
+
+.thanking-list {
+  margin-top: 10vh;
+}
+
+.contributor-text {
+  font-size: 2vw;
+}
