@@ -18,6 +18,22 @@ app.get('/tutorials', (req, res) => {
   res.sendFile(path.join(__dirname + '/html/tutorials.html'))
 })
 
+app.get('/tutorials/html', (req, res) => {
+  res.sendFile(path.join(__dirname + '/html/tutorialHTML.html'))
+})
+
+app.get('/tutorials/css', (req, res) => {
+  res.sendFile(path.join(__dirname + '/html/tutorialCSS.html'))
+})
+
+app.get('/tutorials/nodejs', (req, res) => {
+  res.sendFile(path.join(__dirname + '/html/tutorialNodeJS.html'))
+})
+
+app.get('/tutorials/git', (req, res) => {
+  res.sendFile(path.join(__dirname + '/html/tutorialGit.html'))
+})
+
 // Let's Code
 
 app.get('/example', (req, res) => {
