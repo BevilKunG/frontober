@@ -1,6 +1,5 @@
 .side-bar {
   background-color: #F8F8F8;
-  padding-bottom: 100vh;
 }
 
 .tab-default {
@@ -12,4 +11,30 @@
 
 .tab-active {
   background-color: #00CCFF;
+}
+
+.html-editor {
+  width: 100%;
+  height: 50vh;
+  resize: none;
+  font-size: 20px;
+  padding: 1rem;
+}
+
+.code-show {
+  width: 100%;
+  height: 50vh;
+  border: 2px solid pink;
+  padding: 1rem;
+}
+
+.guilde {
+  width: 100%;
+  height: 20vh;
+  border: 2px solid black;
+  padding: 1rem;
+}
+
+.prev-button {
+  /* display: none; */
 }
