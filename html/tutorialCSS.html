@@ -45,95 +45,33 @@
       </div>
       <div class="col-9">
         <div class="container mt-5">
-          <h1 class="text-center">CSS</h1>
+          <h1 class="text-center mb-5">CSS</h1>
 
-          <!-- <div class="my-5">
-            <p>CSS - Cascading Style Sheets เพิ่มความสวยความงามให้แก่เว็บไซต์</p>
-          </div> -->
+          <div class="guide mb-5">
+            <h3>Guide</h3>
+            <p class="text-center">
+              <span id="tutorial-text"></span>
+            </p>
+            <button id="next-button" class="btn btn-primary float-right">ต่อไป</button>
+            <button id="prev-button" class="btn btn-primary prev-button">ก่อนหน้า</button>
+          </div>
 
-          <!-- <div class="mb-5 text-center">
-            <code>
-              <div>selector {</div>
-              <div>key: value;</div>
-              <div>}</div>
-            </code>
-          </div> -->
-
-          <!-- <div class="mb-5">
-            <h3 class="mb-5">Selector</h3>
-
-            <div class="mb-5">
-              <h4>By Element - element</h4>
-              <div class="mb-4">เหมาะกับการ set style เป็นมาตรฐานของเว็บ</div>
-              <div>
-                <span>Example</span>
-                <div class="row">
-                  <div class="col-6">
-                    <div>&lt;p&gt; This element goes red &lt;/p&gt;</div>
-                    <code>
-                      <div>p {</div>
-                      <div>color: red;</div>
-                      <div>}</div>
-                    </code>
-                  </div>
-                  <div class="col-6">
-                      <p style="color:red;">This element goes red</p>
-                  </div>
-                </div>
-              </div>
+          <div class="row">
+            <div class="col-6 text-center">
+              <textarea id="css" class="code-editor" placeholder="CSS"></textarea>
             </div>
-
-            <div class="mb-5">
-              <h4>By Id - #id</h4>
-              <div class="mb-4">เหมาะกับการ query เพื่อใช้กับ javascript ไม่ค่อยเหมาะกับการ set style</div>
-              <div>
-                <span>Example</span>
-                <div class="row">
-                  <div class="col-6">
-                    <div>&lt;p&gt; Text is white, Background is Blue &lt;/p&gt;</div>
-                    <code>
-                      <div>#id {</div>
-                      <div>color: white;</div>
-                      <div>background-color: blue;</div>
-                      <div>}</div>
-                    </code>
-                  </div>
-                  <div class="col-6">
-                      <p style="color: white; background-color: blue;">Text is white, Background is Blue</p>
-                  </div>
-                </div>
-              </div>
+            <div class="col-6 text-center">
+              <iframe id="code" class="code-show"></iframe>
             </div>
+          </div>
 
-            <div class="mb-5">
-              <h4>By class - .class</h4>
-              <div class="mb-4">เหมาะกับการ set style ทั่วไป</div>
-              <div>
-                <span>Example</span>
-                <div class="row">
-                  <div class="col-6">
-                    <div>&lt;p&gt; Border is green &lt;/p&gt;</div>
-                    <code>
-                      <div>.class {</div>
-                      <div>border: 3px solid green</div>
-                      <div>}</div>
-                    </code>
-                  </div>
-                  <div class="col-6">
-                      <p style="border: 3px solid green">Border is green</p>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-          </div> -->
-
-          <!-- <div class="mb-5">
-            <h3>Bootstrap</h3>
-            <div>Front-End Framework ช่วยจัดการเรื่องความสวยงานให้เว็บ ง่ายๆเพียงเพิ่ม class ของ Bootstap</div>
-          </div> -->
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="../js/cssTutorialText.js"></script>
+    <script type="text/javascript" src="../js/guide.js"></script>
+    <script type="text/javascript" src="../js/cssTutorial.js">
+    </script>
   </body>
 </html>
