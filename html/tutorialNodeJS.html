@@ -45,9 +45,33 @@
       </div>
       <div class="col-9">
         <div class="container mt-5">
-          <h1 class="text-center">Node JS</h1>
+          <h1 class="text-center mb-5">Node JS</h1>
+
+          <div class="row mb-5">
+            <div class="col-6 text-center">
+              <input id="route" class="form-control" type="text" placeholder="ตั้งชื่อ route ของคุณ">
+            </div>
+            <div class="col-6 text-center">
+              <input id="path-file" class="form-control" type="text" placeholder="ชื่อ หรือ ที่อยู่ file ของคุณ">
+            </div>
+          </div>
+
+          <div class="row mb-5">
+            <div class="col-12 text-center">
+              app.get('/<span id="route-show" class="highlight-text">your route name</span>', (req, res) => {
+                res.sendFile(path.join(__dirname + '/contribute/<span id="path-file-show" class="highlight-text">your path file</span>'))
+              })
+            </div>
+          </div>
+
+          <div>
+            <span>คุณสามารถ copy route นี้ไปใส่ในไฟล์ index.js เพื่อเป็นหนทางเข้าสู่หน้า web page ของคุณ</span>
+            <div>route name - ส่วนนี้จะปรากฏอยู่ที่ url ตัวอย่างเช่น www.frontober.com/your-route-name</div>
+            <div>path file - เราแนะนำให้คุณสร้าง directory หรือ folder เป็นชื่อของคุณเองไว้ใน /contribute สำหรับเก็บไฟล์ HTML ของคุณ ตัวอย่างเช่น /contribute/your-name/index.html </div>
+          </div>
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="../js/nodejsTutorial.js"></script>
   </body>
 </html>

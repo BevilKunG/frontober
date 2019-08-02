@@ -38,3 +38,7 @@
 .prev-button {
   /* display: none; */
 }
+
+.highlight-text {
+  color: red;
+}
