@@ -30,7 +30,7 @@
 
 .guide {
   width: 100%;
-  height: 20vh;
+  height: fit-content;
   border: 2px solid black;
   padding: 1rem;
 }
@@ -44,5 +44,42 @@
 }
 
 .full-page {
+  width: 100vw;
   height: 100vh;
+}
+
+.tutorials-title {
+  font-size: 50px;
+}
+
+.tutorials-text {
+  font-size: 25px;
+}
+
+.tutorials-first-title {
+  font-size: 35px;
+}
+
+.tutorials-guide-title {
+  font-size: 30px;
+}
+
+.tutorials-guide-text {
+  font-size: 18px;
+}
+
+.tutorials-route-code {
+  font-size: 18px;
+  width: 100%;
+  height: fit-content;
+  /* border: 2px solid black; */
+  padding: 1rem;
+}
+
+.tutorials-route-text {
+  font-size: 16px;
+}
+
+.btn-row-margin {
+  margin-left: 50vw;
 }

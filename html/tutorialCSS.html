@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/tutorials.css">
   </head>
   <body>
-    <div class="row">
+    <div class="row full-page">
       <div class="col-3 side-bar">
         <div class="ml-2 mt-2">
           <a href="/">
@@ -44,16 +44,18 @@
         </div>
       </div>
       <div class="col-9">
-        <div class="container mt-5 full-page">
-          <h1 class="text-center mb-5">ความสวยงามของ CSS</h1>
+        <div class="container mt-5">
+          <h1 class="text-center mb-5 tutorials-title">ความสวยงามของ CSS</h1>
 
           <div class="guide mb-5">
-            <h3>Guide</h3>
+            <h3 class="tutorials-guide-title">Guide</h3>
             <p class="text-center">
-              <span id="tutorial-text"></span>
+              <span id="tutorial-text" class="tutorials-guide-text"></span>
             </p>
-            <button id="next-button" class="btn btn-primary float-right">ต่อไป</button>
-            <button id="prev-button" class="btn btn-primary prev-button">ก่อนหน้า</button>
+            <div class="row mx-auto">
+              <button id="prev-button" class="btn btn-primary prev-button">ก่อนหน้า</button>
+              <button id="next-button" class="btn btn-primary btn-row-margin">ต่อไป</button>
+            </div>
           </div>
 
           <div class="row">

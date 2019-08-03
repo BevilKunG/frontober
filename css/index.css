@@ -4,11 +4,11 @@
 }
 
 .landing-title {
-  font-size: 10vw;
+  font-size: 150px;
 }
 
 .landing-description {
-  font-size: 2vw;
+  font-size: 25px;
 }
 
 .landing-navigator {
@@ -16,16 +16,16 @@
 }
 
 .landing-description-more {
-  margin-bottom: 20vh;
+  margin-bottom: 25vh;
 }
 
 .description-more-title {
-  font-size: 5vw
+  font-size: 75px;
 }
 
 .description-more-paragraph {
   margin-top: 10vh;
-  font-size: 2vw;
+  font-size: 25px;
 }
 
 .paragraph-mt {
@@ -37,7 +37,7 @@
 }
 
 .thanking-title {
-  font-size: 5vw;
+  font-size: 75px;
 }
 
 .thanking-list {
@@ -45,5 +45,5 @@
 }
 
 .contributor-text {
-  font-size: 2vw;
+  font-size: 25px;
 }

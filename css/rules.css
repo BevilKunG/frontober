@@ -1,9 +1,13 @@
 .rules-step {
-  font-size: 3vw;
+  font-size: 40px;
 }
 
 .rules-text {
-  font-size: 2vw;
+  font-size: 25px;
+}
+
+.rules-title {
+  font-size: 50px;
 }
 
 .rules {
