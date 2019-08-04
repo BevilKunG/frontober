@@ -1,11 +1,13 @@
 const express = require('express')
 const app = express()
 const path = require('path')
+const bodyParser = require('body-parser')
 
 app.use('/css', express.static(__dirname + '/css'))
 app.use('/js', express.static(__dirname + '/js'))
 app.use('/assets', express.static(__dirname + '/assets'))
 app.use('/contribute', express.static(__dirname + '/contribute'))
+app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/index.html'))
@@ -40,7 +42,8 @@ app.get('/feedback', (req, res) => {
 })
 
 app.post('/feedback', (req, res) => {
-  res.redirect('/')
+  res.send(req.body)
+  // res.redirect('/')
 })
 
 // API
