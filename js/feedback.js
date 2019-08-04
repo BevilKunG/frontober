@@ -1,7 +1,12 @@
 const scoreInput = document.getElementById('score')
 const score = document.getElementById('score')
+let selectedScore = 1
 
 const giveScore = (s) => {
+  const scoreButtons = document.querySelectorAll('.btn.btn-primary.feedback-text')
+  scoreButtons[selectedScore - 1].classList.remove('active')
+  scoreButtons[s - 1].classList.add('active')
+  selectedScore = s
   score.value = s
 }
 
@@ -12,7 +17,7 @@ const createScoreButtons = () => {
     column.classList.add('col-2','text-center')
 
     const scoreButton = document.createElement('BUTTON')
-    scoreButton.classList.add('btn','btn-primary')
+    scoreButton.classList.add('btn', 'btn-primary', 'feedback-text')
     scoreButton.innerText = i;
     scoreButton.addEventListener('click', (e) => {
       e.preventDefault()
