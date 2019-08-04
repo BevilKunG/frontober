@@ -35,6 +35,14 @@ app.get('/tutorials/git', (req, res) => {
   res.sendFile(path.join(__dirname + '/html/tutorialGit.html'))
 })
 
+app.get('/feedback', (req, res) => {
+  res.sendFile(path.join(__dirname + '/html/feedback.html'))
+})
+
+app.post('/feedback', (req, res) => {
+  res.redirect('/')
+})
+
 // API
 const contributors = require('./contribute/contributors')
 
