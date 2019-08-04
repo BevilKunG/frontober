@@ -36,9 +36,9 @@ app.get('/tutorials/git', (req, res) => {
 })
 
 // API
-const contributors = require('./js/contributors')
+const contributors = require('./contribute/contributors')
 
-app.get('/contributors', (req, res) => {
+app.get('/api/contributors', (req, res) => {
   res.json({ contributors })
 })
 

@@ -1,4 +1,4 @@
-axios.get('/contributors')
+axios.get('/api/contributors')
   .then(({ data }) => {
     const { contributors } = data
     const list = document.getElementById('list')
