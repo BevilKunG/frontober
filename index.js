@@ -50,4 +50,4 @@ app.get('/example', (req, res) => {
 
 //
 
-app.listen(process.env.port, process.env.IP)
+app.listen(process.env.PORT || 3000, process.env.IP)
