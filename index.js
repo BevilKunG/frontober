@@ -2,12 +2,22 @@ const express = require('express')
 const app = express()
 const path = require('path')
 const bodyParser = require('body-parser')
+const firebase = require('firebase')
 
 app.use('/css', express.static(__dirname + '/css'))
 app.use('/js', express.static(__dirname + '/js'))
 app.use('/assets', express.static(__dirname + '/assets'))
 app.use('/contribute', express.static(__dirname + '/contribute'))
 app.use(bodyParser.urlencoded({ extended: true }))
+
+const config = {
+    apiKey: "AIzaSyDkBKfrmHqmkC-Bt9toyeDyw4HcL21dViM",
+    authDomain: "frontober.firebaseapp.com",
+    databaseURL: "https://frontober.firebaseio.com/",
+    storageBucket: "bucket.appspot.com"
+  };
+firebase.initializeApp(config);
+
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/index.html'))
@@ -42,8 +52,8 @@ app.get('/feedback', (req, res) => {
 })
 
 app.post('/feedback', (req, res) => {
-  res.send(req.body)
-  // res.redirect('/')
+  firebase.database().ref('/feedbacks').push().set( req.body )
+  res.redirect('/')
 })
 
 // API
