@@ -1,11 +1,23 @@
 const express = require('express')
 const app = express()
 const path = require('path')
+const bodyParser = require('body-parser')
+const firebase = require('firebase')
 
 app.use('/css', express.static(__dirname + '/css'))
 app.use('/js', express.static(__dirname + '/js'))
 app.use('/assets', express.static(__dirname + '/assets'))
 app.use('/contribute', express.static(__dirname + '/contribute'))
+app.use(bodyParser.urlencoded({ extended: true }))
+
+const config = {
+    apiKey: "AIzaSyDkBKfrmHqmkC-Bt9toyeDyw4HcL21dViM",
+    authDomain: "frontober.firebaseapp.com",
+    databaseURL: "https://frontober.firebaseio.com/",
+    storageBucket: "bucket.appspot.com"
+  };
+firebase.initializeApp(config);
+
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/index.html'))
@@ -33,6 +45,15 @@ app.get('/tutorials/nodejs', (req, res) => {
 
 app.get('/tutorials/git', (req, res) => {
   res.sendFile(path.join(__dirname + '/html/tutorialGit.html'))
+})
+
+app.get('/feedback', (req, res) => {
+  res.sendFile(path.join(__dirname + '/html/feedback.html'))
+})
+
+app.post('/feedback', (req, res) => {
+  firebase.database().ref('/feedbacks').push().set( req.body )
+  res.redirect('/')
 })
 
 // API

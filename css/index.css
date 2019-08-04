@@ -47,3 +47,7 @@
 .contributor-text {
   font-size: 25px;
 }
+
+nav>a.footer-title {
+  font-size: 40px;
+}
