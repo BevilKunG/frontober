@@ -1,16 +1,5 @@
+// This will show on Thanking list
 const contributors = [
-  {
-    name: 'Example',
-    url: '/example'
-  },
-  {
-    name: 'Example',
-    url: '/example'
-  },
-  {
-    name: 'Example',
-    url: '/example'
-  },
   {
     name: 'Example',
     url: '/example'
