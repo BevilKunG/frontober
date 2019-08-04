@@ -7,7 +7,6 @@ routeName.addEventListener('input', () => {
   routeNameShow.innerText = routeName.value
 })
 
-pathFile.addEventListener('input', (value) => {
-  console.log(value);
+pathFile.addEventListener('input', () => {
   pathFileShow.innerText = pathFile.value
 })
