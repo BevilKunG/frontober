@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Feedback</title>
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/feedback.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
@@ -11,22 +12,22 @@
       <h1 class="text-center my-5 feedback-title">Feedback ให้กับเรา</h1>
       <form action="/feedback" method="POST">
         <div class="form-group mb-5">
-          <label>คุณคิดว่า Frontober เหมาะกับสีแบบไหน หรือ theme แบบไหน</label>
+          <label class="feedback-text">คุณคิดว่า Frontober เหมาะกับสีแบบไหน หรือ theme แบบไหน</label>
           <textarea name="ui" rows="8" cols="80" class="form-control"></textarea>
         </div>
 
         <div class="form-group mb-5">
-          <label>คุณคิดว่า เนื้อหาในส่วนศึกษาเพิ่มเติมควรเพิ่มอะไรบ้าง</label>
+          <label class="feedback-text">คุณคิดว่า เนื้อหาในส่วนศึกษาเพิ่มเติมควรเพิ่มอะไรบ้าง</label>
           <textarea name="tutorial" rows="8" cols="80" class="form-control"></textarea>
         </div>
 
         <div class="form-group mb-5">
-          <label>เมื่อสนใจเข้าร่วมกิจกรรม รายละเอียดขั้นตอนการเข้าร่วมคุณสามารถทำตามทีละ step แล้วเข้าใจหรือไม่ มีส่วนไหนที่ควรแก้ไขปรับปรุงบ้าง</label>
+          <label class="feedback-text">เมื่อสนใจเข้าร่วมกิจกรรม รายละเอียดขั้นตอนการเข้าร่วมคุณสามารถทำตามทีละ step แล้วเข้าใจหรือไม่ มีส่วนไหนที่ควรแก้ไขปรับปรุงบ้าง</label>
           <textarea name="rule" rows="8" cols="80" class="form-control"></textarea>
         </div>
 
         <div class="form-group mb-5">
-          <label class="mb-5">ให้คะแนน Frontober</label>
+          <label class="feedback-text mb-5">ให้คะแนน Frontober</label>
           <div id="button-row" class="row">
 
           </div>
@@ -38,6 +39,16 @@
         </div>
       </form>
     </div>
+
+    <nav class="navbar navbar-dark bg-dark py-5">
+      <a class="navbar-brand footer-title ml-5" href="/">Frontober</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="btn btn-primary" href="/feedback">Feedback ให้กับเรา</a>
+        </li>
+      </ul>
+    </nav>
+
     <script type="text/javascript" src="../js/feedback.js"></script>
   </body>
 </html>

@@ -5,6 +5,7 @@
     <title>Tutorials</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/tutorials.css">
   </head>
   <body>
@@ -47,6 +48,10 @@
         <div class="container mt-5">
           <h1 class="text-center mb-5 tutorials-title">Routing สู่หน้าเว็บ</h1>
 
+          <div class="tutorials-text mb-5">
+            <div>สร้าง route สำหรับหน้าเว็บของคุณ และ copy ไปใช้ใน index.js ได้เลย</div>
+          </div>
+
           <div class="row mb-5">
             <div class="col-6 text-center">
               <input id="route" class="form-control" type="text" placeholder="ตั้งชื่อ route ของคุณ">
@@ -57,25 +62,36 @@
           </div>
 
           <div class="row mb-5 tutorials-route-code">
-            <div class="col-12 text-center">
-              app.get('/<span id="route-show" class="highlight-text">your route name</span>', (req, res) => {
-                res.sendFile(path.join(__dirname + '/contribute/<span id="path-file-show" class="highlight-text">your path file</span>'))
-              })
+            <div class="col-10 text-center">
+              <input id="route-code" class="form-control" type="text">
+            </div>
+            <div class="col-2 text-center">
+              <button id="copy-button" class="btn btn-primary">Copy</button>
             </div>
           </div>
 
-          <div class="tutorials-route-text">
-            <div class="mb-5">คุณสามารถ copy route นี้ไปใส่ในไฟล์ index.js เพื่อเป็นหนทางเข้าสู่หน้า web page ของคุณ</div>
+          <div class="tutorials-text">
+
             <div class="mb-5"><span class="highlight-text">Route Name</span> - ส่วนนี้จะปรากฏอยู่ที่ url ตัวอย่างเช่น www.frontober.com/your-route-name</div>
             <div class="mb-5"><span class="highlight-text">Path File</span> - เราแนะนำให้คุณสร้าง directory หรือ folder เป็นชื่อของคุณเองไว้ใน /contribute สำหรับเก็บไฟล์ HTML ของคุณ ตัวอย่างเช่น /contribute/your-name/index.html </div>
           </div>
 
-          <div>
+          <!-- <div>
             <img class="img-fluid" src="../assets/nodejs-routing.png" alt="nodejs-routing">
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
+
+    <nav class="navbar navbar-dark bg-dark py-5">
+      <a class="navbar-brand footer-title ml-5" href="/">Frontober</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="btn btn-primary" href="/feedback">Feedback ให้กับเรา</a>
+        </li>
+      </ul>
+    </nav>
+
     <script type="text/javascript" src="../js/nodejsTutorial.js"></script>
   </body>
 </html>

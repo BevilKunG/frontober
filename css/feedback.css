@@ -1,3 +1,11 @@
 .feedback-title {
   font-size: 50px;
 }
+
+.feedback-text, div>button.feedback-text {
+  font-size: 25px;
+}
+
+div>button.score-active, div>button.score-active:hover {
+  background-color: red;
+}
