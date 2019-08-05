@@ -4,8 +4,8 @@ let selectedScore = 1
 
 const giveScore = (s) => {
   const scoreButtons = document.querySelectorAll('.btn.btn-primary.feedback-text')
-  scoreButtons[selectedScore - 1].classList.remove('active')
-  scoreButtons[s - 1].classList.add('active')
+  scoreButtons[selectedScore - 1].classList.remove('score-active')
+  scoreButtons[s - 1].classList.add('score-active')
   selectedScore = s
   score.value = s
 }
@@ -30,3 +30,4 @@ const createScoreButtons = () => {
 }
 
 createScoreButtons()
+giveScore(selectedScore)
