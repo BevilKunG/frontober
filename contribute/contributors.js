@@ -3,6 +3,10 @@ const contributors = [
   {
     name: 'Example',
     url: '/example'
+  },
+  {
+    name: 'Test Join',
+    url: '/test-join'
   }
 ]
 
