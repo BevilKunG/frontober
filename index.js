@@ -53,7 +53,11 @@ app.get('/feedback', (req, res) => {
 
 app.post('/feedback', (req, res) => {
   firebase.database().ref('/feedbacks').push().set( req.body )
-  res.redirect('/')
+  res.redirect('/feedback/thanks')
+})
+
+app.get('/feedback/thanks', (req, res) => {
+  res.sendFile(path.join(__dirname + '/html/feedbackThanks.html'))
 })
 
 // API

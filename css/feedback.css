@@ -9,3 +9,7 @@
 div>button.score-active, div>button.score-active:hover {
   background-color: red;
 }
+
+.feedback-thanks-title {
+  font-size: 100px;
+}

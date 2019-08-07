@@ -1,13 +1,13 @@
-.landing-header {
+.landing-header, .feedback-thanks-header {
   padding-top: 30vh;
   padding-bottom: 25vh;
 }
 
-.landing-title {
+.landing-title{
   font-size: 150px;
 }
 
-.landing-description {
+.landing-description, .feedback-thanks-description {
   font-size: 25px;
 }
 
